@@ -465,7 +465,7 @@
           </div>
           <div class="ml-3">
             <p class="text-sm font-medium text-green-800">
-              Your message was successflly submitted
+              Your message was successfully submitted
             </p>
           </div>
           <div class="ml-auto pl-3">
@@ -555,8 +555,8 @@
       const handleSubmit = (event) => {
         event.preventDefault();
 
-        const myForm = event.target;
-        const formData = new FormData(myForm);
+        const form = event.target;
+        const formData = new FormData(form);
 
         fetch('/', {
           method: 'POST',
@@ -565,6 +565,7 @@
         })
           .then(() => {
             successMessage.classList.remove('opacity-0');
+            form.reset();
             setTimeout(function () {
               hideSuccessMessage();
             }, 3000);
