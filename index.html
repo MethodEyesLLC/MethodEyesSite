@@ -53,13 +53,13 @@
           >
         </div>
       </nav>
-      <div class="z-50 mt-16 md:mt-32 mx-auto text-center">
+      <div class="px-4 md:px-0 z-50 mt-16 md:mt-32 mx-auto text-center">
         <h1
           class="font-serif text-5xl md:text-6xl tracking-tight leading-tight"
         >
           Never worry about awards again.
         </h1>
-        <p class="mt-5 text-sans font-light text-xl md:text-3xl tracking-tight">
+        <p class="mt-5 font-sans font-light text-xl md:text-3xl tracking-tight">
           We elevate your campaigns into award-winning successes.
         </p>
         <a
@@ -72,15 +72,20 @@
     </header>
     <section id="intro" class="bg-midnight w-full pt-10 pb-20">
       <div
-        class="max-w-6.5xl mx-auto bg-coral-500 text-white -mt-24 text-center p-8 md:p-20 rounded-4xl"
+        class="overflow-y-hidden relative max-w-6.5xl mx-auto bg-coral-500 text-white -mt-24 text-center p-8 md:p-20 rounded-4xl"
       >
+        <img
+          class="absolute top-0 left-0 h-full w-full"
+          src="./Texture-Noise.png"
+          alt=""
+        />
         <h2
           class="font-serif text-4xl md:text-5xl tracking-tight leading-tight"
         >
           You reflect, we obsess.
         </h2>
         <p
-          class="mt-10 text-sans font-light text-xl md:text-2xl tracking-tight leading-10"
+          class="mt-5 md:mt-10 font-sans font-light text-base md:text-2xl tracking-tight leading-10"
         >
           We’ll take care of securing the perfect award placements for your
           team, while delivering the kind of exceptional creativity and
@@ -98,8 +103,13 @@
         </h3>
         <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div
-            class="rounded-4xl border border-white/40 bg-white/10 p-8 ml-0 mt-3 md:mt-0 md:ml-3"
+            class="relative overflow-hidden rounded-4xl border border-white/40 bg-white/10 p-8 ml-0 mt-3 md:mt-0 md:ml-3"
           >
+            <img
+              class="absolute top-0 left-0 h-full w-full"
+              src="./Texture-Noise.png"
+              alt=""
+            />
             <div class="pb-2 border-gradient w-full">
               <p class="text-2xl text-white">Campaign Awards</p>
               <p class="text-sm text-white/70">
@@ -128,8 +138,13 @@
             </ul>
           </div>
           <div
-            class="rounded-4xl border border-white/40 bg-white/10 p-8 ml-0 mt-3 md:mt-0 md:ml-3"
+            class="overflow-hidden relative rounded-4xl border border-white/40 bg-white/10 p-8 ml-0 mt-3 md:mt-0 md:ml-3"
           >
+            <img
+              class="absolute top-0 left-0 h-full w-full"
+              src="./Texture-Noise.png"
+              alt=""
+            />
             <div class="pb-2 border-gradient w-full">
               <p class="text-2xl text-white">People & Talent Awards</p>
               <p class="text-sm text-white/70">
@@ -158,8 +173,13 @@
             </ul>
           </div>
           <div
-            class="rounded-4xl border border-white/40 bg-white/10 p-8 ml-0 md:ml-3 mt-3 lg:mt-0"
+            class="relative overflow-hidden rounded-4xl border border-white/40 bg-white/10 p-8 ml-0 md:ml-3 mt-3 lg:mt-0"
           >
+            <img
+              class="absolute top-0 left-0 h-full w-full"
+              src="./Texture-Noise.png"
+              alt=""
+            />
             <div class="pb-2 border-gradient w-full">
               <p class="text-2xl text-white">Agency & Business Awards</p>
               <p class="text-sm text-white/70">
@@ -190,12 +210,12 @@
         </div>
       </div>
     </section>
-    <section id="about" class="grid gird-cols-1 md:grid-cols-2">
+    <section id="about" class="grid gird-cols-1 md:grid-cols-2 items-stretch">
       <img
         src="./Texture.jpeg"
-        class="hidden md:block w-full h-full object-cover"
+        class="hidden md:block w-full place-self-stretch h-[750px]"
       />
-      <div class="px-8 md:px-16 py-16 lg:py-40">
+      <div class="px-8 md:px-16 py-16 place-self-stretch md:h-[750px]">
         <h2 class="font-serif text-5xl tracking-tight leading-12">
           Awards aren't a full-time gig.
           <span class="text-coral-500">They're a year-round commitment.</span>
@@ -574,7 +594,7 @@
             errorMessage.classList.remove('opacity-0');
             setTimeout(function () {
               hideErrorMessage();
-              console.log("in the timeout")
+              console.log('in the timeout');
             }, 3000);
           });
       };
