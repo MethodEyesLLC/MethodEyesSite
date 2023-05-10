@@ -1,0 +1,14 @@
+{
+    "name": "Method Eyes",
+    "short_name": "Method Eyes",
+    "icons": [
+        {
+            "src": "/android-chrome-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#0a1524",
+    "background_color": "#0a1524",
+    "display": "standalone"
+}
