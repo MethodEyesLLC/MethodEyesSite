@@ -4,7 +4,8 @@
   "description": "Method Eyes Marking Site",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "production": "npx tailwindcss -o build.css --minify"
   },
   "author": "",
   "license": "ISC",
