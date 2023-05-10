@@ -1,14 +1,430 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-  <title>Method Eyes</title>
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloock&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>Method Eyes</title>
+    <!--Get's current year-->
+    <script>
+      window.onload = function() {
+        var currentYear = new Date().getFullYear();
+        var yearElement = document.getElementById("currentYear");
+        yearElement.innerText = currentYear;
+      };
+    </script>
+  </head>
+  <body class="bg-coral-100">
+    <header class="relative h-[724px]">
+      <img
+        class="absolute top-0 left-0 -z-10 w-full"
+        src="./SVG_Overlay.svg"
+        alt=""
+      />
+      <nav
+        class="z-50 pt-16 max-w-6.5xl mx-auto flex flex-wrap md:flex-no-wrap items-center justify-center md:justify-between"
+        class="font-sans"
+      >
+        <img alt="Method Eyes Logo" src="./Primary.svg" />
+        <div
+          class="w-full md:w-auto justify-center flex mt-6 md:mt-0 space-x-12 md:space-x-16 items-center"
+        >
+          <a
+            class="tracking-tight text-base transition duration-200 ease-in-out hover:underline"
+            href="#about"
+          >
+            About
+          </a>
+          <a
+            class="tracking-tight text-base transition duration-200 ease-in-out hover:underline"
+            href="#services"
+            >Services</a
+          >
+          <a
+            class="tracking-tight text-base md:px-4 md:py-3 md:border md:border-coral-500 md:text-coral-500 md:bg-white rounded-md transition duration-200 ease-in-out hover:underline md:hover:no-underline md:hover:bg-coral-500 md:hover:text-white"
+            href="#contact"
+            >Contact us</a
+          >
+        </div>
+      </nav>
+      <div class="z-50 mt-16 md:mt-32 mx-auto text-center">
+        <h1
+          class="font-serif text-5xl md:text-6xl tracking-tight leading-tight"
+        >
+          Never worry about awards again.
+        </h1>
+        <p class="mt-5 text-sans font-light text-xl md:text-3xl tracking-tight">
+          We elevate your campaigns into award-winning successes.
+        </p>
+        <a
+          href="#about"
+          class="py-5 px-8 bg-coral-500 text-5 rounded-md inline-block mt-10 text-white tracking-tight transition duration-200 ease-in-out hover:bg-coral-500/90"
+        >
+          Find out more
+        </a>
+      </div>
+    </header>
+    <section id="intro" class="bg-midnight w-full pt-10 pb-20">
+      <div
+        class="max-w-6.5xl mx-auto bg-coral-500 text-white -mt-24 text-center p-8 md:p-20 rounded-4xl"
+      >
+        <h2
+          class="font-serif text-4xl md:text-5xl tracking-tight leading-tight"
+        >
+          You reflect, we obsess.
+        </h2>
+        <p
+          class="mt-10 text-sans font-light text-xl md:text-2xl tracking-tight leading-10"
+        >
+          We’ll take care of securing the perfect award placements for your
+          team, while delivering the kind of exceptional creativity and
+          innovative strategies that set you apart from the competition. With
+          our help, you'll earn the recognition you deserve.
+        </p>
+      </div>
+      <div
+        class="px-8 md:px-0 max-w-6.5xl mx-auto mt-8 flex flex-col justify-center font-medium"
+      >
+        <h3
+          class="text-3xl pb-2 inline-block mx-auto border-gradient text-white"
+        >
+          Past wins
+        </h3>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="rounded-4xl border border-white/40 bg-white/10 p-8 ml-0 mt-3 md:mt-0 md:ml-3"
+          >
+            <div class="pb-2 border-gradient w-full">
+              <p class="text-2xl text-white">Campaign Awards</p>
+              <p class="text-sm text-white/70">
+                Awards that celebrate your work
+              </p>
+            </div>
+            <ul class="mt-6 space-y-4">
+              <li
+                class="flex font-sans font-light text-base text-white tracking-tight space-x-2 items-center"
+              >
+                <img src="./icons/award.svg" alt="" />
+                <span>Cannes Lion</span>
+              </li>
+              <li
+                class="flex font-sans font-light text-base text-white tracking-tight space-x-2 items-center"
+              >
+                <img src="./icons/award.svg" alt="" />
+                <span>Effie Awards</span>
+              </li>
+              <li
+                class="flex font-sans font-light text-base text-white tracking-tight space-x-2 items-center"
+              >
+                <img src="./icons/award.svg" alt="" />
+                <span>The Webby Awards</span>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="rounded-4xl border border-white/40 bg-white/10 p-8 ml-0 mt-3 md:mt-0 md:ml-3"
+          >
+            <div class="pb-2 border-gradient w-full">
+              <p class="text-2xl text-white">People & Talent Awards</p>
+              <p class="text-sm text-white/70">
+                Awards that celebrate your people
+              </p>
+            </div>
+            <ul class="mt-6 space-y-4">
+              <li
+                class="flex font-sans font-light text-base text-white tracking-tight space-x-2 items-center"
+              >
+                <img src="./icons/award.svg" alt="" />
+                <span>Ad Age A-List</span>
+              </li>
+              <li
+                class="flex font-sans font-light text-base text-white tracking-tight space-x-2 items-center"
+              >
+                <img src="./icons/award.svg" alt="" />
+                <span>Campaign US Inspiring Women</span>
+              </li>
+              <li
+                class="flex font-sans font-light text-base text-white tracking-tight space-x-2 items-center"
+              >
+                <img src="./icons/award.svg" alt="" />
+                <span>PRWeek 40 Under 40</span>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="rounded-4xl border border-white/40 bg-white/10 p-8 ml-0 md:ml-3 mt-3 lg:mt-0"
+          >
+            <div class="pb-2 border-gradient w-full">
+              <p class="text-2xl text-white">Agency & Business Awards</p>
+              <p class="text-sm text-white/70">
+                Awards that celebrate your company
+              </p>
+            </div>
+            <ul class="mt-6 space-y-4">
+              <li
+                class="flex font-sans font-light text-base text-white tracking-tight space-x-2 items-center"
+              >
+                <img src="./icons/award.svg" alt="" />
+                <span>Campaign US Agency of the Year</span>
+              </li>
+              <li
+                class="flex font-sans font-light text-base text-white tracking-tight space-x-2 items-center"
+              >
+                <img src="./icons/award.svg" alt="" />
+                <span>Fast Co. Brands That Matter</span>
+              </li>
+              <li
+                class="flex font-sans font-light text-base text-white tracking-tight space-x-2 items-center"
+              >
+                <img src="./icons/award.svg" alt="" />
+                <span>Digiday Worklife</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="grid gird-cols-1 md:grid-cols-2">
+      <img
+        src="./Texture.jpeg"
+        class="hidden md:block w-full h-full object-cover"
+      />
+      <div class="px-8 md:px-16 py-16 lg:py-40">
+        <h2 class="font-serif text-5xl tracking-tight leading-12">
+          Awards aren't a full-time gig.
+          <span class="text-coral-500">They're a year-round commitment.</span>
+        </h2>
+        <p class="font-sans font-light mt-6 leading-9">
+          With over a decade of experience in the awards industry, the team at
+          Method Eyes has gained invaluable insights from both the award show
+          and agency perspectives.
+        </p>
+        <p class="font-sans font-light mt-6 leading-9">
+          Founder Jenn Orabona's track record speaks for itself, as she has
+          consistently boosted the awards ranking of major agencies across
+          various esteemed award shows such as Cannes, Effies, Clios, and
+          PRWeek.
+        </p>
+        <p class="font-sans font-light mt-6 leading-9">
+          At Method Eyes, we leverage our expertise in creative advertising,
+          effectiveness, public relations and business-focused award shows to
+          help brands, agencies, and individuals develop award strategies, and
+          create compelling submissions. While we specialize in these specific
+          areas, we have also garnered experience across a diverse range of
+          award shows.
+        </p>
+      </div>
+    </section>
+    <section id="services" class="bg-midnight px-8 py-12 md:p-20 lg:p-30">
+      <h2 class="font-serif text-5xl tracking-tight leading-12 text-white">
+        You work on the future, <br />
+        <span class="text-heather">we celebrate the past.</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
+        <div>
+          <div
+            class="flex font-sans font-medium text-base text-white tracking-tight space-x-2 items-center"
+          >
+            <img src="./icons/clipboard.svg" alt="Clipboard icon" />
+            <span>Consultation & Work Assessment</span>
+          </div>
+          <p class="text-sm text-white/90 font-sans font-light mt-3 leading-8">
+            Don't know where to start? We dive deep into your creative projects,
+            leaving no stone unturned. With our expert guidance, we'll help you
+            transform your great ideas into awards successes.
+          </p>
+        </div>
+        <div>
+          <div
+            class="flex font-sans font-medium text-base text-white tracking-tight space-x-2 items-center"
+          >
+            <img src="./icons/handshake.svg" alt="Handshake icon" />
+            <span> Award Program Recommendations</span>
+          </div>
+          <p class="text-sm text-white/90 font-sans font-light mt-3 leading-8">
+            Looking to showcase your hard work and creativity? We'll comb
+            through the labyrinth of award shows and programs, handpicking the
+            perfect ones to showcase your creative genius. It's your time to
+            shine, and we're here to help.
+          </p>
+        </div>
+        <div>
+          <div
+            class="flex font-sans font-medium text-base text-white tracking-tight space-x-2 items-center"
+          >
+            <img src="./icons/typewriter.svg" alt="Typewriter icon" />
+            <span> Award Submission Writing </span>
+          </div>
+          <p class="text-sm text-white/90 font-sans font-light mt-3 leading-8">
+            Winning an award is more than just creating fantastic work; it's
+            about telling the story behind it. And all great work deserves a
+            great story. We'll craft a captivating narrative and manage every
+            detail of your submission, ensuring your work stands out from the
+            crowd.
+          </p>
+        </div>
+        <div>
+          <div
+            class="flex font-sans font-medium text-base text-white tracking-tight space-x-2 items-center"
+          >
+            <img src="./icons/list-check.svg" alt="Check list icon" />
+            <span>Award Project Management</span>
+          </div>
+          <p class="text-sm text-white/90 font-sans font-light mt-3 leading-8">
+            Our team will manage every aspect of your submission. We ensure that
+            the right people at your company have had their chance to review,
+            and will even project manage a case study video if needed.
+          </p>
+        </div>
+        <div>
+          <div
+            class="flex font-sans font-medium text-base text-white tracking-tight space-x-2 items-center"
+          >
+            <img src="./icons/mailbox.svg" alt="Mailbox icon" />
+            <span> Award Entry Submission</span>
+          </div>
+          <p class="text-sm text-white/90 font-sans font-light mt-3 leading-8">
+            Submitting award entries can be a tedious process, but not with us.
+            We'll juggle the deadlines, guidelines, and (virtual) paperwork, so
+            you can focus on what you do best—creating amazing work.
+          </p>
+        </div>
+        <div>
+          <div
+            class="flex font-sans font-medium text-base text-white tracking-tight space-x-2 items-center"
+          >
+            <img src="./icons/bell.svg" alt="Bell icon" />
+            <span> Ongoing Support & Guidance</span>
+          </div>
+          <p class="text-sm text-white/90 font-sans font-light mt-3 leading-8">
+            Who says the journey ends once the awards are won? Our team of
+            experts will be there for you to provide insights and
+            recommendations for future programs.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="grid gird-cols-1 md:grid-cols-2">
+      <div class="px-8 md:px-16 py-16 lg:py-40 relative">
+        <img
+          src="./Texture-2.svg"
+          alt=""
+          class="absolute w-full object-cover top-0 left-0 h-full -z-10"
+        />
+        <h2 class="font-serif text-5xl tracking-tight leading-12">
+          Get in touch.
+        </h2>
+        <p
+          class="max-w-[340px] text-xl text-midnight font-sans font-light mt-2 leading-8"
+        >
+          Let's schedule time to see how we can best partner together.
+        </p>
+        <div class="mt-10 flex space-x-2">
+          <img src="./icons/envelope.svg" alt="Envelope Icon" />
+          <a
+            class="hover:underline"
+            href="mailto:awards@methodeyes.com?subject=Hi!%20I'm%20interested%20in%20working%20with%20Method%20Eyes."
+            target="_blank"
+            rel="noopener noreferrer"
+            >awards@methodeyes.com</a
+          >
+        </div>
+      </div>
+      <div class="px-8 md:px-16 py-16 lg:py-40">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          class="space-y-6"
+        >
+          <div class="w-full">
+            <label
+              class="w-full text-base font-regular tracking-tight block"
+              for="name"
+            >
+              Full name
+            </label>
+            <input
+              class="mt-2 w-full bg-white font-midnight border border-walnut rounded-md p-2 "
+              type="text"
+              name="name"
+            />
+          </div>
+          <div class="w-full">
+            <label
+              class="w-full text-base font-regular tracking-tight block"
+              for="name"
+              for="email"
+            >
+              Email</label
+            >
+            <input
+              class="mt-2 w-full bg-white font-midnight border border-walnut rounded-md p-2 "
+              type="email"
+              name="email"
+            />
+          </div>
+          <div class="w-full">
+            <label
+              for="phone"
+              class="w-full text-base font-regular tracking-tight block"
+            >
+              Phone</label
+            >
+            <input
+              type="tel"
+              name="phone"
+              minlength="10"
+              maxlength="15"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              class="mt-2 w-full bg-white font-midnight border border-walnut rounded-md p-2 "
+            />
+            <span class="text-xs mt-2 text-midnight/40">Format: 123-456-7890</span>
+          </div>
+          <div class="w-full">
+            <label class="w-full text-base font-regular tracking-tight block">Message</label>
+            <textarea name="message" rows="3" class="mt-2 w-full bg-white font-midnight border border-walnut rounded-md p-2"></textarea >
+          </div>
+          <div class="w-full text-right">
+            <button type="submit" class="bg-midnight hover:bg-midnight/90 text-white px-4 py-2 rounded-md">Send message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="px-8 py-12 md:p-20 lg:p-30 bg-midnight flex flex-wrap lg:flex-no-wrap justify-center md:justify-between items-center space-y-8 md:space-y-0">
+      <div class="text-white"> 
+        <img alt="All white Method Eyes Logo" src="./Secondary-Logo.svg" />
+        <p class="mt-4">&copy; <span id="currentYear"></span> Method Eyes. All Rights Reserved.</p>
+        <div class="mt-2">
+          <a href="https://www.linkedin.com/company/method-eyes/">
+            <img class="hover:bg-imperial w-6" src="./icons/Linkedin.svg" alt="LinkedIn Logo Icon">
+          </a>
+        </div>
+      </div>
+      <nav class="text-white space-x-16 w-full flex justify-center md:w-auto">
+        <a
+            class="tracking-tight text-lg transition duration-200 ease-in-out hover:underline"
+            href="#about"
+          >
+            About
+          </a>
+          <a
+            class="tracking-tight text-lg transition duration-200 ease-in-out hover:underline"
+            href="#services"
+            >Services</a
+          >
+          <a
+            class="tracking-tight text-lg transition duration-200 ease-in-out hover:underline"
+            href="#contact"
+            >Contact us</a
+          >
+      </nav>
+    </footer>
+  </body>
 </html>
