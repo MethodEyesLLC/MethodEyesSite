@@ -9,3 +9,12 @@
   border-image-width: 1;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s;
+  animation-delay: 1s;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
